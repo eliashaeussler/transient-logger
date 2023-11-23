@@ -1,11 +1,21 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Parameter \\#3 \\$context \\(array\\<string, mixed\\>\\) of method EliasHaeussler\\\\TransientLogger\\\\TransientLogger\\:\\:log\\(\\) should be contravariant with parameter \\$context \\(array\\) of method Psr\\\\Log\\\\LoggerInterface\\:\\:log\\(\\)$#"
-			count: 2
+			message: "#^Parameter \\#3 \\$context \\(array\\<string, mixed\\>\\) of method EliasHaeussler\\\\TransientLogger\\\\TransientLogger\\:\\:log\\(\\) should be contravariant with parameter \\$context \\(array\\) of method Psr\\\\Log\\\\AbstractLogger\\:\\:log\\(\\)$#"
+			count: 1
 			path: src/TransientLogger.php
 
 		-
-			message: "#^Parameter \\#2 \\$message of method EliasHaeussler\\\\TransientLogger\\\\TransientLogger\\:\\:log\\(\\) expects string, null given\\.$#"
+			message: "#^Parameter \\#3 \\$context \\(array\\<string, mixed\\>\\) of method EliasHaeussler\\\\TransientLogger\\\\TransientLogger\\:\\:log\\(\\) should be contravariant with parameter \\$context \\(array\\) of method Psr\\\\Log\\\\LoggerInterface\\:\\:log\\(\\)$#"
+			count: 1
+			path: src/TransientLogger.php
+
+		-
+			message: "#^Parameter \\#3 \\$context \\(array\\<string, mixed\\>\\) of method EliasHaeussler\\\\TransientLogger\\\\TransientLogger\\:\\:log\\(\\) should be contravariant with parameter \\$context \\(array\\) of method Psr\\\\Log\\\\LoggerTrait\\:\\:log\\(\\)$#"
+			count: 1
+			path: src/TransientLogger.php
+
+		-
+			message: "#^Parameter \\#2 \\$message of method EliasHaeussler\\\\TransientLogger\\\\TransientLogger\\:\\:log\\(\\) expects string\\|Stringable, null given\\.$#"
 			count: 1
 			path: tests/src/TransientLoggerTest.php
