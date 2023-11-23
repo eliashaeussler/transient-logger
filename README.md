@@ -25,6 +25,16 @@ for testing applications and libraries.
 composer require --dev eliashaeussler/transient-logger
 ```
 
+## 💥 Compatibility with `psr/log`
+
+Make sure to require the correct version of this library, depending
+on which version of `psr/log` you're using:
+
+| `psr/log` version | `eliashaeussler/transient-logger` version |
+|-------------------|-------------------------------------------|
+| `^1.0`            | `^1.0`                                    |
+| `^2.0 \|\| ^3.0`  | `^2.0`                                    |
+
 ## ⚡ Usage
 
 ### Create logger
