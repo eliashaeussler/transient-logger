@@ -36,11 +36,7 @@ You can use it just like any other PSR-3 compliant logger:
 ```php
 use EliasHaeussler\TransientLogger;
 
-// Create a new logger
 $logger = new TransientLogger\TransientLogger();
-
-// Log messages
-$logger->alert('Houston, we have a problem!', ['error' => 'rocket down']);
 ```
 
 ### Log messages
@@ -49,6 +45,18 @@ For each logged message, a new [`Log\LogRecord`](src/Log/LogRecord.php) is
 created and attached to the logger instance. The appropriate log levels are
 represented by a [`Log\LogLevel`](src/Log/LogLevel.php) enum which is a wrapper
 around PSR's [`LogLevel`](https://github.com/php-fig/log/blob/master/src/LogLevel.php) constants.
+
+```php
+// Log using generic log() method
+$logger->log(
+    TransientLogger\Log\LogLevel::Alert,
+    'Houston, we have a problem!',
+    ['error' => 'rocket down'],
+);
+
+// Log using specific methods
+$logger->alert('Houston, we have a problem!', ['error' => 'rocket down']);
+```
 
 ### Access log records
 
