@@ -50,6 +50,7 @@ final class TransientLogger extends AbstractLogger implements Countable, Iterato
     private array $log = [];
 
     /**
+     * @param string|Stringable    $message
      * @param array<string, mixed> $context
      *
      * @throws Exception\LogLevelIsInvalid
