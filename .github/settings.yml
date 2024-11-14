@@ -88,7 +88,6 @@ branches:
           - 'Tests (PHP 8.3 & highest dependencies)'
           - 'Tests (PHP 8.3 & lowest dependencies)'
           - 'Test coverage'
-          - 'codecov/project'
       enforce_admins: false
       required_linear_history: true
       restrictions: null
