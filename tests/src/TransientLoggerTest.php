@@ -122,14 +122,14 @@ final class TransientLoggerTest extends Framework\TestCase
             ['error' => 'we\'re hungry'],
         );
 
-        self::assertCount(0, $this->subject->getByLogLevel(Src\Log\LogLevel::Emergency));
+        self::assertSame([], $this->subject->getByLogLevel(Src\Log\LogLevel::Emergency));
         self::assertCount(1, $this->subject->getByLogLevel(Src\Log\LogLevel::Alert));
         self::assertCount(1, $this->subject->getByLogLevel(Src\Log\LogLevel::Critical));
-        self::assertCount(0, $this->subject->getByLogLevel(Src\Log\LogLevel::Error));
-        self::assertCount(0, $this->subject->getByLogLevel(Src\Log\LogLevel::Warning));
-        self::assertCount(0, $this->subject->getByLogLevel(Src\Log\LogLevel::Notice));
-        self::assertCount(0, $this->subject->getByLogLevel(Src\Log\LogLevel::Info));
-        self::assertCount(0, $this->subject->getByLogLevel(Src\Log\LogLevel::Debug));
+        self::assertSame([], $this->subject->getByLogLevel(Src\Log\LogLevel::Error));
+        self::assertSame([], $this->subject->getByLogLevel(Src\Log\LogLevel::Warning));
+        self::assertSame([], $this->subject->getByLogLevel(Src\Log\LogLevel::Notice));
+        self::assertSame([], $this->subject->getByLogLevel(Src\Log\LogLevel::Info));
+        self::assertSame([], $this->subject->getByLogLevel(Src\Log\LogLevel::Debug));
     }
 
     #[Framework\Attributes\Test]
@@ -141,11 +141,11 @@ final class TransientLoggerTest extends Framework\TestCase
             ['error' => 'rocket down'],
         );
 
-        self::assertCount(1, $this->subject);
+        self::assertCount(1, $this->subject->getAll());
 
         $this->subject->flushLog();
 
-        self::assertCount(0, $this->subject);
+        self::assertSame([], $this->subject->getAll());
     }
 
     #[Framework\Attributes\Test]
