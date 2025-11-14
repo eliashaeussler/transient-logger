@@ -138,6 +138,18 @@ rulesets:
               integration_id: 15368
             - context: 'Tests (PHP 8.4, psr/log 3.0 & lowest dependencies)'
               integration_id: 15368
+            - context: 'Tests (PHP 8.5, psr/log 1.0 & highest dependencies)'
+              integration_id: 15368
+            - context: 'Tests (PHP 8.5, psr/log 1.0 & lowest dependencies)'
+              integration_id: 15368
+            - context: 'Tests (PHP 8.5, psr/log 2.0 & highest dependencies)'
+              integration_id: 15368
+            - context: 'Tests (PHP 8.5, psr/log 2.0 & lowest dependencies)'
+              integration_id: 15368
+            - context: 'Tests (PHP 8.5, psr/log 3.0 & highest dependencies)'
+              integration_id: 15368
+            - context: 'Tests (PHP 8.5, psr/log 3.0 & lowest dependencies)'
+              integration_id: 15368
             - context: 'Test coverage'
               integration_id: 15368
     bypass_actors:
