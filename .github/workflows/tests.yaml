@@ -20,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-version: ["8.1", "8.2", "8.3", "8.4", "8.5"]
+        php-version: ["8.2", "8.3", "8.4", "8.5"]
         psr-log-version: ["1.0", "2.0", "3.0"]
         dependencies: ["highest", "lowest"]
     steps:

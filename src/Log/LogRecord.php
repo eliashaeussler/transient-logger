@@ -31,15 +31,15 @@ use Stringable;
  * @author Elias Häußler <elias@haeussler.dev>
  * @license GPL-3.0-or-later
  */
-final class LogRecord implements Stringable
+final readonly class LogRecord implements Stringable
 {
     /**
      * @param array<string, mixed> $context
      */
     public function __construct(
-        public readonly LogLevel $level,
-        public readonly Stringable|string $message,
-        public readonly array $context = [],
+        public LogLevel $level,
+        public Stringable|string $message,
+        public array $context = [],
     ) {}
 
     public function __toString(): string
