@@ -1,25 +1,25 @@
 parameters:
 	ignoreErrors:
 		-
-			message: '#^Parameter \#3 \$context \(array\<string, mixed\>\) of method EliasHaeussler\\TransientLogger\\TransientLogger\:\:log\(\) should be contravariant with parameter \$context \(array\<mixed\>\) of method Psr\\Log\\AbstractLogger\:\:log\(\)$#'
+			rawMessage: 'Parameter #3 $context (array<string, mixed>) of method EliasHaeussler\TransientLogger\TransientLogger::log() should be contravariant with parameter $context (array<mixed>) of method Psr\Log\AbstractLogger::log()'
 			identifier: method.childParameterType
 			count: 1
 			path: src/TransientLogger.php
 
 		-
-			message: '#^Parameter \#3 \$context \(array\<string, mixed\>\) of method EliasHaeussler\\TransientLogger\\TransientLogger\:\:log\(\) should be contravariant with parameter \$context \(array\<mixed\>\) of method Psr\\Log\\LoggerInterface\:\:log\(\)$#'
+			rawMessage: 'Parameter #3 $context (array<string, mixed>) of method EliasHaeussler\TransientLogger\TransientLogger::log() should be contravariant with parameter $context (array<mixed>) of method Psr\Log\LoggerInterface::log()'
 			identifier: method.childParameterType
 			count: 1
 			path: src/TransientLogger.php
 
 		-
-			message: '#^Parameter \#3 \$context \(array\<string, mixed\>\) of method EliasHaeussler\\TransientLogger\\TransientLogger\:\:log\(\) should be contravariant with parameter \$context \(array\<mixed\>\) of method Psr\\Log\\LoggerTrait\:\:log\(\)$#'
+			rawMessage: 'Parameter #3 $context (array<string, mixed>) of method EliasHaeussler\TransientLogger\TransientLogger::log() should be contravariant with parameter $context (array<mixed>) of method Psr\Log\LoggerTrait::log()'
 			identifier: method.childParameterType
 			count: 1
 			path: src/TransientLogger.php
 
 		-
-			message: '#^Parameter \#2 \$message of method EliasHaeussler\\TransientLogger\\TransientLogger\:\:log\(\) expects string\|Stringable, null given\.$#'
+			rawMessage: 'Parameter #2 $message of method EliasHaeussler\TransientLogger\TransientLogger::log() expects string|Stringable, null given.'
 			identifier: argument.type
 			count: 1
 			path: tests/src/TransientLoggerTest.php
