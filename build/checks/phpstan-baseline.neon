@@ -4,22 +4,22 @@ parameters:
 			rawMessage: 'Parameter #3 $context (array<string, mixed>) of method EliasHaeussler\TransientLogger\TransientLogger::log() should be contravariant with parameter $context (array<mixed>) of method Psr\Log\AbstractLogger::log()'
 			identifier: method.childParameterType
 			count: 1
-			path: src/TransientLogger.php
+			path: ../../src/TransientLogger.php
 
 		-
 			rawMessage: 'Parameter #3 $context (array<string, mixed>) of method EliasHaeussler\TransientLogger\TransientLogger::log() should be contravariant with parameter $context (array<mixed>) of method Psr\Log\LoggerInterface::log()'
 			identifier: method.childParameterType
 			count: 1
-			path: src/TransientLogger.php
+			path: ../../src/TransientLogger.php
 
 		-
 			rawMessage: 'Parameter #3 $context (array<string, mixed>) of method EliasHaeussler\TransientLogger\TransientLogger::log() should be contravariant with parameter $context (array<mixed>) of method Psr\Log\LoggerTrait::log()'
 			identifier: method.childParameterType
 			count: 1
-			path: src/TransientLogger.php
+			path: ../../src/TransientLogger.php
 
 		-
 			rawMessage: 'Parameter #2 $message of method EliasHaeussler\TransientLogger\TransientLogger::log() expects string|Stringable, null given.'
 			identifier: argument.type
 			count: 1
-			path: tests/src/TransientLoggerTest.php
+			path: ../../tests/src/TransientLoggerTest.php

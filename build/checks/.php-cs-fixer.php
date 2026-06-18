@@ -34,5 +34,5 @@ $header = PhpCsFixerConfig\Rules\Header::create(
 
 return PhpCsFixerConfig\Config::create()
     ->withRule($header)
-    ->withFinder(static fn (Finder\Finder $finder) => $finder->in(__DIR__))
+    ->withFinder(static fn (Finder\Finder $finder) => $finder->in(dirname(__DIR__, 2)))
 ;
