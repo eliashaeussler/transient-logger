@@ -3,8 +3,7 @@
 # Transient PSR-3 logger
 
 [![Coverage](https://img.shields.io/coverallsCoverage/github/eliashaeussler/transient-logger?logo=coveralls)](https://coveralls.io/github/eliashaeussler/transient-logger)
-[![CGL](https://img.shields.io/github/actions/workflow/status/eliashaeussler/transient-logger/cgl.yaml?label=cgl&logo=github)](https://github.com/eliashaeussler/transient-logger/actions/workflows/cgl.yaml)
-[![Tests](https://img.shields.io/github/actions/workflow/status/eliashaeussler/transient-logger/tests.yaml?label=tests&logo=github)](https://github.com/eliashaeussler/transient-logger/actions/workflows/tests.yaml)
+[![CI](https://img.shields.io/github/actions/workflow/status/eliashaeussler/transient-logger/ci.yaml?label=CI&logo=github)](https://github.com/eliashaeussler/transient-logger/actions/workflows/ci.yaml)
 [![Supported PHP Versions](https://img.shields.io/packagist/dependency-v/eliashaeussler/transient-logger/php?logo=php)](https://packagist.org/packages/eliashaeussler/transient-logger)
 
 </div>
